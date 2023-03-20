@@ -1,5 +1,7 @@
-import * as React from "react"
+import React, { useState, useEffect, useRef } from 'react'
 import Layout from "../components/layout"
+import BIRDS from 'vanta/dist/vanta.birds.min'
+
 
 const pageStyles = {
   color: "#232129",
@@ -125,13 +127,27 @@ const links = [
 ]
 
 const IndexPage = () => {
+  const [vantaEffect, setVantaEffect] = useState(null)
+  const myRef = useRef(null)
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(BIRDS({
+        el: myRef.current
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
   return (
 
     <Layout pageTitle="Home Page">
 
-    <main style={pageStyles}>
-      <p>This paragraph is a child</p>
-    </main>
+<div ref={myRef}>
+    Foreground content goes here
+  </div>
 
     </Layout>
   )
