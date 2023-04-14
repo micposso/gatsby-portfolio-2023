@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Layout from "../components/layout"
-import BIRDS from 'vanta/dist/vanta.birds.min'
+import { Link } from 'gatsby'
+
+import HALO from 'vanta/dist/vanta.halo.min'
 
 
 const pageStyles = {
@@ -132,7 +134,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(BIRDS({
+      setVantaEffect(HALO({
         el: myRef.current
       }))
     }
@@ -142,12 +144,16 @@ const IndexPage = () => {
   }, [vantaEffect])
 
   return (
-
     <Layout pageTitle="Home Page">
 
-<div ref={myRef}>
-    Foreground content goes here
-  </div>
+    <div ref={myRef} className='full-webgl-background'>
+    <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+      </nav>
+    </div>
 
     </Layout>
   )
