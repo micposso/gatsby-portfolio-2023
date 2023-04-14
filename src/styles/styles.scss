@@ -1,0 +1,16 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #3133;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.full-webgl-background {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: $primary-color;
+}
