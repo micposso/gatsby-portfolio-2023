@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'gatsby'
 
-import BIRDS from 'vanta/dist/vanta.birds.min'
+import HALO from 'vanta/dist/vanta.halo.min'
 
-const About = () => {
+const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
 
   useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(BIRDS({
+      setVantaEffect(HALO({
         el: myRef.current
       }))
     }
@@ -20,12 +21,15 @@ const About = () => {
   return (
 
     <div ref={myRef} className='scroll-child'>
-
+    <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+      </nav>
     </div>
 
   )
 }
 
-export const Head = () => <title>About Me</title>
-
-export default About
+export default Home;
