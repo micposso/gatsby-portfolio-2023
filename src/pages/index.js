@@ -1,5 +1,9 @@
-import * as React from "react"
+import React, { useState, useEffect, useRef } from 'react'
 import Layout from "../components/layout"
+import { Link } from 'gatsby'
+
+import HALO from 'vanta/dist/vanta.halo.min'
+
 
 const pageStyles = {
   color: "#232129",
@@ -125,13 +129,31 @@ const links = [
 ]
 
 const IndexPage = () => {
-  return (
+  const [vantaEffect, setVantaEffect] = useState(null)
+  const myRef = useRef(null)
 
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(HALO({
+        el: myRef.current
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
+  return (
     <Layout pageTitle="Home Page">
 
-    <main style={pageStyles}>
-      <p>This paragraph is a child</p>
-    </main>
+    <div ref={myRef} className='full-webgl-background'>
+    <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+      </nav>
+    </div>
 
     </Layout>
   )
