@@ -1,9 +1,8 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #3133;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+* {
+  margin: 0;
 }
 
 .full-webgl-background {
@@ -11,6 +10,26 @@ body {
   height: 100vh;
 }
 
-a {
-  color: $primary-color;
+html { /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.full-page-container {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-child {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: end;
+}
+
+.top-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background: #000;
+  z-index: 10;
 }
