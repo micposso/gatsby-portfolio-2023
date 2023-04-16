@@ -1,6 +1,10 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #3133;
 
+* {
+  margin: 0;
+}
+
 .full-webgl-background {
   width: 100vw;
   height: 100vh;
@@ -9,7 +13,7 @@ $primary-color: #3133;
 html { /* body won't work ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
 }
 
 .full-page-container {
@@ -20,4 +24,12 @@ html { /* body won't work ¯\_(ツ)_/¯ */
   height: 100vh;
   width: 100vw;
   scroll-snap-align: end;
+}
+
+.top-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background: #000;
+  z-index: 10;
 }

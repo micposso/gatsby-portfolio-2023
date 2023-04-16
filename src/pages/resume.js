@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'gatsby'
 
 import BIRDS from 'vanta/dist/vanta.birds.min'
 
-const About = () => {
+const Resume = ({ links }) => {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
 
@@ -19,8 +20,7 @@ const About = () => {
 
   return (
 
-    <div ref={myRef} className='scroll-child'>
-
+    <div ref={myRef} className='scroll-child' id="resume">
     </div>
 
   )
@@ -28,4 +28,4 @@ const About = () => {
 
 export const Head = () => <title>About Me</title>
 
-export default About
+export default Resume

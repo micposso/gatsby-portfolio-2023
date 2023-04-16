@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'gatsby'
 
-import HALO from 'vanta/dist/vanta.halo.min'
+import NET from 'vanta/dist/vanta.net.min'
 
-const Home = ({ links }) => {
+const Blog = ({ links }) => {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
 
   useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(HALO({
+      setVantaEffect(NET({
         el: myRef.current
       }))
     }
@@ -19,10 +20,12 @@ const Home = ({ links }) => {
 
   return (
 
-    <div ref={myRef} className='scroll-child' id="home">
+    <div ref={myRef} className='scroll-child' id="blog">
     </div>
 
   )
 }
 
-export default Home;
+export const Head = () => <title>Engineering Blog</title>
+
+export default Blog
