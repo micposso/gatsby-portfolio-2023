@@ -13,6 +13,8 @@
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
+    https://bootstrapmade.com/demo/DevFolio/
+
     ```shell
     # create a new Gatsby site using the minimal starter
     npm init gatsby

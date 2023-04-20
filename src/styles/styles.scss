@@ -34,8 +34,17 @@ html { /* body won't work ¯\_(ツ)_/¯ */
   z-index: 10;
 }
 
+
 .background-profile {
-  width: 300px;
+  max-width: 300px;
   height: 300px;
+  border-radius: 50%;;
   background-color: #000;
+  background: url("../images/profile.jpg") no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 60%;
+  mix-blend-mode: lighten;
 }
+
+

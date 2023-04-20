@@ -1,18 +1,33 @@
 import React from "react";
-import { Link } from "gatsby";
+import * as navigationStyles from "./navigation.module.css"
 
 const Navigation = ({ links }) => {
   console.log(links);
   return (
-    <div class="container-fluid top-navigation">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<header className={navigationStyles.navigation}>
+    <div className="container d-flex align-items-center justify-content-between">
+
+      <h1 className="logo"><a href="index.html">DevFolio</a></h1>
+      <a href="index.html" className="logo"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
+
+      <nav id="navbar" className="navbar">
+        <ul>
+
         {links.map((link, index) => (
           <li key={index}>
-            <a className="navbar-brand" href={link.to}>{link.label}</a>
+            <a className="nav-link scrollto active" href={link.to}>{link.label}</a>
           </li>
         ))}
+
+
+
+        </ul>
+        <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
+
     </div>
+  </header>
   );
 };
 
