@@ -20,6 +20,9 @@ const Home = ({ links }) => {
   return (
 
     <div ref={myRef} className='scroll-child' id="home">
+      <div className="background-profile">
+        
+      </div>
     </div>
 
   )
