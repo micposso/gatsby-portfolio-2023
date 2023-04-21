@@ -28,7 +28,8 @@ const Home = ({ links }) => {
       <div className="overlay"></div>
 
       <Card style={{ width: "35rem" }}>
-      <Card.Text className="text-center">
+      <div className="name-card text-center">michael posso</div>
+      <Card.Text  className="text-center">
             Enginering Manager | Tech Educator | UI Developer
           </Card.Text>
         <Card.Body>

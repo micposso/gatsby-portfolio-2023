@@ -72,6 +72,7 @@ html { /* body won't work ¯\_(ツ)_/¯ */
   padding-bottom: 40px;
 }
 
+
 .overlay {
   position: absolute;
   top: 0;
@@ -89,12 +90,20 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 }
 
   .card-title {
-    font-family: Old Standard T;
+    font-family: Old Standard TT;
     font-size: 70px;
     font-style: italic;
     letter-spacing: -3px;
     line-height: 72px;
   }  
+
+  .name-card {
+    font-family: Old Standard TT;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
     
 
 

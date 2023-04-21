@@ -17,7 +17,7 @@ module.exports = {
         ],
         web: [
           {
-            name: `Old Standard T`,
+            name: `Old Standard TT`,
             file: `https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600&display=swap`,
           },
           {
