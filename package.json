@@ -18,10 +18,12 @@
     "@fullpage/react-fullpage": "^0.1.38",
     "bootstrap": "^5.2.3",
     "gatsby": "^5.7.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-sass": "^6.8.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.62.0",
     "vanta": "^0.5.24"
   }

@@ -10,7 +10,9 @@ const IndexPage = () => {
 
   const links = [
     { to: "#home", label: "Home" },
-    { to: "#resume", label: "resume" },
+    { to: "#Skills", label: "Skills" },
+    { to: "#projects", label: "Projects" },
+    { to: "#teaching", label: "Teaching" },
     { to: "#blog", label: "blog" },
   ];
 

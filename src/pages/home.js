@@ -22,20 +22,24 @@ const Home = ({ links }) => {
   }, [vantaEffect]);
 
   return (
-    <div ref={myRef} className="scroll-child d-flex justify-content-center align-items-center vh-100" id="home">
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+<>
+    <div ref={myRef}>
+      <div className="scroll-child d-flex justify-content-center align-items-center vh-100" id="home">
+      <div className="overlay"></div>
+
+      <Card style={{ width: "35rem" }}>
+      <Card.Text className="text-center">
+            Enginering Manager | Tech Educator | UI Developer
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
+        <Card.Body>
+          <Card.Title>I build and manage development teams that scale.</Card.Title>
+         </Card.Body>
       </Card>
-      <div className="background-profile"></div>
+      </div>
+
     </div>
+          <div className="background-profile"></div>
+          </>
   );
 };
 
