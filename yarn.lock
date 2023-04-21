@@ -1020,7 +1020,7 @@
   "resolved" "https://registry.npmjs.org/@babel/regjsgen/-/regjsgen-0.8.0.tgz"
   "version" "0.8.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.17.2", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   "integrity" "sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw=="
   "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.21.0.tgz"
   "version" "7.21.0"
@@ -1774,29 +1774,29 @@
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
   "version" "2.11.6"
 
-"@react-aria/ssr@^3.4.1":
-  "integrity" "sha512-h0MJdSWOd1qObLnJ8mprU31wI8tmKFJMuwT22MpWq6psisOOZaga6Ml4u6Ee6M6duWWISjXvqO4Sb/J0PBA+nQ=="
-  "resolved" "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.5.0.tgz"
-  "version" "3.5.0"
+"@react-aria/ssr@^3.5.0":
+  "integrity" "sha512-OFiYQdv+Yk7AO7IsQu/fAEPijbeTwrrEYvdNoJ3sblBBedD5j5fBTNWrUPNVlwC4XWWnWTCMaRIVsJujsFiWXg=="
+  "resolved" "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.6.0.tgz"
+  "version" "3.6.0"
   dependencies:
     "@swc/helpers" "^0.4.14"
 
-"@restart/hooks@^0.4.6", "@restart/hooks@^0.4.7":
+"@restart/hooks@^0.4.9":
   "integrity" "sha512-3BekqcwB6Umeya+16XPooARn4qEPW6vNvwYnlofIYe6h9qG1/VeD7UvShCWx11eFz5ELYmwIEshz+MkPX3wjcQ=="
   "resolved" "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.9.tgz"
   "version" "0.4.9"
   dependencies:
     "dequal" "^2.0.2"
 
-"@restart/ui@^1.4.1":
-  "integrity" "sha512-cMI9DdqZV5VGEyANYM4alHK9/2Lh/mKZAMydztMl6PBLm6EetFbwE2RfYqliloR+EtEULlI4TiZk/XPhQAovxw=="
-  "resolved" "https://registry.npmjs.org/@restart/ui/-/ui-1.6.1.tgz"
-  "version" "1.6.1"
+"@restart/ui@^1.6.3":
+  "integrity" "sha512-7HM5aiSWvJBWr+FghZj/n3PSuH2kUrOPiu/D92aIv1zTL8IBwFoQ3oz/f76svoN5v2PKaP6pQbg6vTcIiSffzg=="
+  "resolved" "https://registry.npmjs.org/@restart/ui/-/ui-1.6.3.tgz"
+  "version" "1.6.3"
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.21.0"
     "@popperjs/core" "^2.11.6"
-    "@react-aria/ssr" "^3.4.1"
-    "@restart/hooks" "^0.4.7"
+    "@react-aria/ssr" "^3.5.0"
+    "@restart/hooks" "^0.4.9"
     "@types/warning" "^3.0.0"
     "dequal" "^2.0.3"
     "dom-helpers" "^5.2.0"
@@ -2067,7 +2067,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-transition-group@^4.4.4":
+"@types/react-transition-group@^4.4.5":
   "integrity" "sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA=="
   "resolved" "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.5.tgz"
   "version" "4.4.5"
@@ -3195,7 +3195,7 @@
   "resolved" "https://registry.npmjs.org/ci-info/-/ci-info-2.0.0.tgz"
   "version" "2.0.0"
 
-"classnames@^2.3.1":
+"classnames@^2.3.2":
   "integrity" "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   "version" "2.3.2"
@@ -7861,21 +7861,21 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"react-bootstrap@^2.7.2":
-  "integrity" "sha512-WDSln+mG4RLLFO01stkj2bEx/3MF4YihK9D/dWnHaSxOiQZLbhhlf95D2Jb20X3t2m7vMxRe888FVrfLJoGmmA=="
-  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.7.2.tgz"
-  "version" "2.7.2"
+"react-bootstrap@^2.7.4":
+  "integrity" "sha512-EPKPwhfbxsKsNBhJBitJwqul9fvmlYWSft6jWE2EpqhEyjhqIqNihvQo2onE5XtS+QHOavUSNmA+8Lnv5YeAyg=="
+  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.7.4.tgz"
+  "version" "2.7.4"
   dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@restart/hooks" "^0.4.6"
-    "@restart/ui" "^1.4.1"
-    "@types/react-transition-group" "^4.4.4"
-    "classnames" "^2.3.1"
+    "@babel/runtime" "^7.21.0"
+    "@restart/hooks" "^0.4.9"
+    "@restart/ui" "^1.6.3"
+    "@types/react-transition-group" "^4.4.5"
+    "classnames" "^2.3.2"
     "dom-helpers" "^5.2.1"
     "invariant" "^2.2.4"
     "prop-types" "^15.8.1"
     "prop-types-extra" "^1.1.0"
-    "react-transition-group" "^4.4.2"
+    "react-transition-group" "^4.4.5"
     "uncontrollable" "^7.2.1"
     "warning" "^4.0.3"
 
@@ -7946,7 +7946,7 @@
     "loose-envify" "^1.1.0"
     "neo-async" "^2.6.1"
 
-"react-transition-group@^4.4.2":
+"react-transition-group@^4.4.5":
   "integrity" "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g=="
   "resolved" "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz"
   "version" "4.4.5"

@@ -26,6 +26,12 @@ html { /* body won't work ¯\_(ツ)_/¯ */
   scroll-snap-align: end;
 }
 
+
+.navbarFixed {
+  position: fixed;
+  z-index: 2;
+}
+
 .top-navigation {
   position: fixed;
   top: 0px;
