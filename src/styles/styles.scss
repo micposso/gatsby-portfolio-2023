@@ -84,9 +84,13 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 }
 
 .card-text {
-  font-family: Raleway;
+  font-family: Old Standard TT;
   font-size: 1rem;
 
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;text-transform: uppercase;
 }
 
   .card-title {
@@ -100,9 +104,27 @@ html { /* body won't work ¯\_(ツ)_/¯ */
   .name-card {
     font-family: Old Standard TT;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    line-height: 1.2rem;
   }
+
+  .card-vertical-line {
+    height: 50px;
+    border-left: 1px solid #fff;
+  }
+
+  .line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vector-container {
+  width: 300px;
+  margin: 0 auto;
+}
   
     
 
