@@ -9,10 +9,10 @@ import Navigation from '../components/navigation'
 const IndexPage = () => {
 
   const links = [
-    { to: "#home", label: "Home" },
-    { to: "#Skills", label: "Skills" },
-    { to: "#projects", label: "Projects" },
-    { to: "#teaching", label: "Teaching" },
+    { to: "#home", label: "home" },
+    { to: "#Skills", label: "skills" },
+    { to: "#projects", label: "projects" },
+    { to: "#teaching", label: "teaching" },
     { to: "#blog", label: "blog" },
   ];
 

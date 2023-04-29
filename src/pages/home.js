@@ -25,7 +25,10 @@ const Home = ({ links }) => {
 
   return (
 <>
+<div className="background-profile"></div>
+
     <div ref={myRef}>
+
       <div className="scroll-child d-flex justify-content-center align-items-center vh-100" id="home">
       <div className="overlay"></div>
 
@@ -55,7 +58,6 @@ const Home = ({ links }) => {
       </div>
 
     </div>
-          <div className="background-profile"></div>
           </>
   );
 };

@@ -1,4 +1,12 @@
 .navbarFixed {
   position: fixed;
-  top: 40px;
+  z-index: 2;
+  width: 100%;
+  font-family: Old Standard TT;
+  font-size: 1rem;
+}
+
+.navbarFixed a {
+    color: #fff;
+    font-weight: bold;
 }

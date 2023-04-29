@@ -9,7 +9,7 @@ const Navigation = ({ links }) => {
     <Nav
       activeKey="/home"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-      className="navbarFixed justify-content-end"
+      className={`${navigationStyles.navbarFixed} navbarFixed justify-content-end`}
     >
       {links.map((link, index) => (
         <Nav.Item key={index}>
