@@ -1,0 +1,24 @@
+.home-hero {
+  max-width: 900px; ;
+}
+
+.monster-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monster-item {
+  width: 35%;
+}
+
+.vertical_container {
+display: flex;
+justify-content: center;
+}
+
+.vertical_container-text {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  writing-mode: vertical-rl;
+}

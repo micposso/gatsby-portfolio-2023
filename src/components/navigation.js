@@ -1,18 +1,33 @@
 import React from "react";
-import { Link } from "gatsby";
+
+import Nav from 'react-bootstrap/Nav';
 
 const Navigation = ({ links }) => {
   console.log(links);
   return (
-    <div class="container-fluid top-navigation">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        {links.map((link, index) => (
-          <li key={index}>
-            <a className="navbar-brand" href={link.to}>{link.label}</a>
-          </li>
-        ))}
-      </nav>
-    </div>
+    <>
+    <Nav
+      activeKey="/home"
+      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+      className="navbarFixed justify-content-between"
+    >
+      <div className="nav_brand-left vertical-text">
+        <div className="nav_brand">
+        <div className="nav_brand-name">michael posso</div>
+      <div className="nav_brand-subtitle">Engineering Manager | Tech Educator | UI Developer</div>
+        </div>
+   
+      </div>
+      <div className="nav_menu-items">
+      {links.map((link, index) => (
+        <Nav.Item key={index}>
+          <Nav.Link href={link.to}>{link.label}</Nav.Link>
+        </Nav.Item>
+      ))}
+      </div>
+    </Nav>
+
+    </>
   );
 };
 

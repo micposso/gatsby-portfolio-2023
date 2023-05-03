@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './home'
 import Resume from './resume'
@@ -8,8 +9,9 @@ import Navigation from '../components/navigation'
 const IndexPage = () => {
 
   const links = [
-    { to: "#home", label: "Home" },
-    { to: "#resume", label: "resume" },
+    { to: "#Skills", label: "skills" },
+    { to: "#projects", label: "projects" },
+    { to: "#teaching", label: "teaching" },
     { to: "#blog", label: "blog" },
   ];
 
