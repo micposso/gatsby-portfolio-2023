@@ -9,7 +9,6 @@ import Navigation from '../components/navigation'
 const IndexPage = () => {
 
   const links = [
-    { to: "#home", label: "home" },
     { to: "#Skills", label: "skills" },
     { to: "#projects", label: "projects" },
     { to: "#teaching", label: "teaching" },

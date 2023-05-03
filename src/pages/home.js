@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
-import Monster from '../assets/monster-1.svg';
+import Monster from "../assets/monster-1.svg";
 
 import HALO from "vanta/dist/vanta.halo.min";
+
+const backgroundStyles = {
+  zIndex: "10",
+};
 
 const Home = ({ links }) => {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -24,41 +27,31 @@ const Home = ({ links }) => {
   }, [vantaEffect]);
 
   return (
-<>
-<div className="background-profile"></div>
-
     <div ref={myRef}>
-
-      <div className="scroll-child d-flex justify-content-center align-items-center vh-100" id="home">
-      <div className="overlay"></div>
-
-      <Card style={{ width: "35rem" }}>
-        <div className="vector-container">
-          <Monster />
-        </div>
-      <div className="name-card text-center">michael posso</div>
-      <div className="line-container">
-        <div className="card-vertical-line">
-        </div>
+      <div
+        className="scroll-child d-flex justify-content-center align-items-center vh-100"
+        id="home"
+      >
+        <Container className="home-hero">
+          <Row>
+            <Col>
+              <div className="monster-container">
+                <Monster className="monster-item" />
+              </div>
+              <h1>
+                <i>I build and manage</i> development teams <i>that scale.</i>{" "}
+                <span className="heading-sub">I can also code :)</span>
+              </h1>
+              <div className="vertical_container">
+                <div className="vertical_container-text">scrolldown</div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        <div className="overlay"></div>
+        <div className="background-profile"></div>
       </div>
-      <Card.Text  className="text-center">
-            Enginering Manager | Tech Educator | UI Developer
-          </Card.Text>
-        <Card.Body>
-          <Card.Title>I build and manage development teams that scale.</Card.Title>
-         </Card.Body>
-         <div className="line-container">
-          <div className="card-vertical-line"></div>
-          <div className="vertical-text">
-            scrolldown
-          </div>
-        </div>
-
-      </Card>
-      </div>
-
     </div>
-          </>
   );
 };
 
