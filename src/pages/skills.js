@@ -20,7 +20,7 @@ const Skills = ({ links }) => {
 
   return (
 
-    <div ref={myRef} className='scroll-child' id="resume">
+    <div ref={myRef} className='scroll-child' id="skills">
     </div>
 
   )
