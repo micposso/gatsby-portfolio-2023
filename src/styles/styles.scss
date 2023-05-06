@@ -3,6 +3,7 @@
 @import 'layout';
 @import 'navigation';
 @import 'preloader';
+@import 'overrides';
 
 * {
   margin: 0;
@@ -12,6 +13,8 @@
   width: 100vw;
   height: 100vh;
 }
+
+/* scrolling */
 
 html { /* body won't work ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
@@ -67,6 +70,16 @@ body {
   bottom: 0;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* skills page */
+
+.container-text {
+  padding: 25px;
+}
+
+.container-gradient {
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), transparent);
 }
     
 
