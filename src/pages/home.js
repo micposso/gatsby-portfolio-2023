@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-import Monster from "../assets/monster-1.svg";
+import MonsterHome from "../assets/monster-1.svg";
 
 import HALO from "vanta/dist/vanta.halo.min";
 
@@ -36,7 +36,7 @@ const Home = ({ links }) => {
           <Row>
             <Col>
               <div className="monster-container">
-                <Monster className="monster-item" />
+                <MonsterHome className="monster-item" />
               </div>
               <h1>
                 <i>I build and manage</i> development teams <i>that scale.</i>{" "}

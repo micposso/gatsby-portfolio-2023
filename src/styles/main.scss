@@ -1,7 +1,14 @@
-$font-stack: Old Standard TT;
+$font-headings: Old Standard TT;
+$font-text: Rubik;
 $headings-color: #fff;
 $primary-color: #3133;
 
-$large: 5em;
-$medium: 3em;
-$small: 2em;
+/* headings */
+$heading-large: 5em;
+$heading-medium: 3em;
+$heading-small: 2em;
+
+/* text */
+$text-regular:1em;
+$text-medium:1em;
+$text-small: 0.7em;

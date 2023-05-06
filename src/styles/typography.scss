@@ -1,7 +1,30 @@
+h1, h2, h3 {
+  font-family: $font-headings;
+}
+
 h1 {
-  font-size: $large;
+  font-size: $heading-large;
   letter-spacing: -8px;
   line-height: 0.9em;
+}
+
+h2 {
+  font-size: $heading-medium;
+  letter-spacing: -8px;
+  line-height: 0.9em;
+}
+
+h3 {
+  font-size: $heading-small;
+  line-height: 0.9em;
+}
+
+p {
+  font-family: $font-text;
+  font-size: $text-small;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #fff;
 }
 
 .heading-sub {

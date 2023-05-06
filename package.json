@@ -15,10 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
     "@fullpage/react-fullpage": "^0.1.38",
     "bootstrap": "^5.2.3",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-emotion": "^8.9.0",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.8.0",
     "react": "^18.2.0",

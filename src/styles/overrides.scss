@@ -1,7 +1,21 @@
 .accordion {
   --bs-accordion-bg: none;
+  --bs-accordion-border-width: 0;
 }
 
 .accordion-button {
   color: white;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #fff;
 }

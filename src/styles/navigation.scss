@@ -10,21 +10,20 @@
 }
 
 .nav_menu-items {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarFixed a {
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .nav_brand-left {
   position: relative;
   left: 10px;
 }
-
 
 .nav_brand {
   display: flex;
@@ -36,9 +35,10 @@
   font-size: 3em;
   letter-spacing: -1px;
   line-height: 1em;
-  }
+}
 
 .nav_brand-subtitle {
   font-size: 1em;
+  font-family: Rubik;
+  font-weight: 300;
 }
-

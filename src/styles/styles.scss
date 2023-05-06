@@ -23,7 +23,7 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 }
 
 body {
-  font-family: $font-stack;
+  font-family: $font-text;
   color: $headings-color;
   font-size: 24px;
 }
@@ -49,10 +49,9 @@ body {
 .background-profile {
   background-color: #000;
   background: url("../images/profile-full.png") no-repeat center;
-  background-size: contain;
-  position: absolute;
   background-position: right;
   background-size: cover;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -60,6 +59,18 @@ body {
   z-index: 5;
   opacity: .3;
   mix-blend-mode: multiply;
+}
+
+.background-monsters {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  z-index: 5;
+}
+
+.monster-skills {
+  width: 17em;
+  fill: #fff;
 }
 
 .overlay {
@@ -79,7 +90,7 @@ body {
 }
 
 .container-gradient {
-  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.7), transparent);
 }
     
 
