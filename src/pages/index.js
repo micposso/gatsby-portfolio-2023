@@ -2,12 +2,12 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import PreloaderComponent from "../components/preloader";
-import Home from './home'
+import Home from '../components/home'
 import Navigation from '../components/navigation'
-import Skills from './skills'
-import Projects from './projects'
-import Resume from './resume'
-import Blog from './blog'
+import Skills from '../components/skills'
+import Projects from '../components/projects'
+import Resume from '../components/resume'
+import Blog from '../components/blog'
 
 
 const IndexPage = () => {
