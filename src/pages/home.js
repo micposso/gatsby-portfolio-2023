@@ -1,15 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import MonsterHome from "../assets/monster-1.svg";
 
 import HALO from "vanta/dist/vanta.halo.min";
 
-const backgroundStyles = {
-  zIndex: "10",
-};
-
-const Home = ({ links }) => {
+const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
 

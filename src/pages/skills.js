@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Accordion from "react-bootstrap/Accordion";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 
 import MonsterSkills from "../assets/monster-2.svg";
 
