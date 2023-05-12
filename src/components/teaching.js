@@ -1,77 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "gatsby";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import { IoLogoJavascript } from "react-icons/io";
-import { DiReact } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+import MonsterTeaching from "../assets/monster-4.svg";
 
-import { css } from "@emotion/react";
+import BIRDS from "vanta/dist/vanta.birds.min";
 
-import MonsterSkills from "../assets/monster-2.svg";
-
-import NET from "vanta/dist/vanta.net.min";
-
-const fadeIn = css`
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  animation: fade-in 1s ease-out;
-`;
-
-const monsterIn = css`
-@keyframes monster-in {
-  from {
-    right: -25%;
-  }
-  to {
-    right: -10%;
-  }
-}
-
-animation: monster-in 1s ease-out;
-`
-
-const Skills = () => {
+const Teaching = ({ links }) => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      {
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
 
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        NET({
+        BIRDS({
           el: myRef.current,
         })
       );
@@ -85,17 +26,13 @@ const Skills = () => {
     <div
       ref={myRef}
       className="scroll-child d-flex align-items-center justify-content-center"
-      id="skills"
+      id="teaching"
     >
-      <Container
-        className="container-gradient container-text"
-        ref={ref}
-        css={isVisible ? fadeIn : null}
-      >
+      <Container className="container-gradient container-text">
         <Row>
           <Col>
             <h1>
-              <i>Skills</i>
+              <i>Teaching</i>
             </h1>
           </Col>
           <Col>
@@ -113,36 +50,23 @@ const Skills = () => {
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              <h3>Web Development</h3>
+              <h3>Technology Curriculum Development</h3>
             </Accordion.Header>
             <Accordion.Body>
-              <Container>
-                <Row>
-                  <Col>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
-                  </Col>
-                  <Col>
-                    <IoLogoJavascript className="tech-icons" />
-                    <DiReact className="tech-icons" />
-                    <SiTypescript className="tech-icons" />
-                    <SiTailwindcss className="tech-icons" />
-                  </Col>
-                </Row>
-              </Container>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              <h3>Technical Project Management</h3>
+              <h3>Fashion Institute of Technology</h3>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -158,7 +82,7 @@ const Skills = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <h3>Cloud & DevOps</h3>
+              <h3>New York Institute of Technology</h3>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -174,7 +98,7 @@ const Skills = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>
-              <h3>Digital Marketing</h3>
+              <h3>Miami University</h3>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -191,13 +115,11 @@ const Skills = () => {
         </Accordion>
         <Row></Row>
       </Container>
-
-      <MonsterSkills className="monster-skills" ref={ref}
-        css={isVisible ? monsterIn : null} />
+      <MonsterTeaching className="monster-teaching" />
     </div>
   );
 };
 
 export const Head = () => <title>About Me</title>;
 
-export default Skills;
+export default Teaching;

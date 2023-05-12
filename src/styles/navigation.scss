@@ -10,7 +10,6 @@
 }
 
 .nav_menu-items {
-  width: 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -41,4 +40,8 @@
   font-size: 1em;
   font-family: Rubik;
   font-weight: 300;
+  text-align: center;
+}
+
+.bg-primary {
 }

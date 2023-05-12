@@ -23,11 +23,16 @@ const Home = () => {
   }, [vantaEffect]);
 
   return (
+    <>
+
+    {/* <div className="overlay"></div> */}
+
     <div ref={myRef}>
       <div
         className="scroll-child d-flex justify-content-center align-items-center vh-100"
         id="home"
       >
+
         <Container className="home-hero">
           <Row>
             <Col>
@@ -44,10 +49,10 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-        <div className="overlay"></div>
         <div className="background-profile"></div>
       </div>
     </div>
+    </>
   );
 };
 

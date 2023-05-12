@@ -5,6 +5,15 @@ import MonsterProjects from "../assets/monster-3.svg";
 
 import RINGS from "vanta/dist/vanta.rings.min";
 
+const colors = [
+  {
+    NodeJs: "#ac4b8d",
+    Cloud: "#16ffff",
+    ReactJs: "#ff255c",
+    TypeScript: "#ffee25"
+  }
+]
+
 const projects = [
   {
     src: "http://via.placeholder.com/640x360",
@@ -13,6 +22,7 @@ const projects = [
     description:
       "Curabitur et mi metus. Quisque dignissim et lacus sit amet blandit. Aenean id consectetur quam.",
     technologies: ["NodeJS", "Cloud", "ReactJS", "TypeScript"],
+    image: require("../static/project-image-1.jpg").default
   },
   {
     src: "http://via.placeholder.com/640x360",
@@ -21,6 +31,7 @@ const projects = [
     description:
       "Curabitur et mi metus. Quisque dignissim et lacus sit amet blandit. Aenean id consectetur quam.",
     technologies: ["NodeJS", "Cloud", "ReactJS", "TypeScript"],
+    image: require("../static/project-image-2.jpg").default
   },
   {
     src: "http://via.placeholder.com/640x360",
@@ -29,6 +40,7 @@ const projects = [
     description:
       "Curabitur et mi metus. Quisque dignissim et lacus sit amet blandit. Aenean id consectetur quam.",
     technologies: ["NodeJS", "Cloud", "ReactJS", "TypeScript"],
+    image: require("../static/project-image-1.jpg").default
   },
   {
     src: "http://via.placeholder.com/640x360",
@@ -37,8 +49,21 @@ const projects = [
     description:
       "Curabitur et mi metus. Quisque dignissim et lacus sit amet blandit. Aenean id consectetur quam.",
     technologies: ["NodeJS", "Cloud", "ReactJS", "TypeScript"],
+    image: require("../static/project-image-1.jpg").default
   },
 ];
+
+function getColor(str) {
+  for (let i = 0; i < colors.length; i++) {
+    const colorObj = colors[i]
+    for (const key in colorObj) {
+      if (key.toLowerCase() === str.toLowerCase()) {
+        return colorObj[key]
+      }
+    }
+  }
+  return null
+}
 
 const Projects = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -61,7 +86,7 @@ const Projects = () => {
     <div
       ref={myRef}
       className="scroll-child d-flex align-items-center justify-content-center"
-      id="resume"
+      id="projects"
     >
       <Container className="container-gradient container-text">
         <Row>
@@ -85,14 +110,13 @@ const Projects = () => {
         <Row>
           {projects.map((project, index) => (
             <Col key={index} xs={6} md={4} lg={3}>
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={project.src} />
+              <Card style={{ width: "18rem", backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(${project.image})` }}>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Card.Text>
                     {project.technologies.map((technology, index) => (
-                      <Badge bg="secondary" key={index}>{technology}</Badge>
+                      <Badge bg="" style={{ backgroundColor: getColor(technology) }} className="me-2" key={index}>{technology}</Badge>
                     ))}
                   </Card.Text>
                 </Card.Body>
@@ -101,9 +125,9 @@ const Projects = () => {
           ))}
         </Row>
       </Container>
-      <div className="background-monsters">
-        <MonsterProjects className="monster-skills" />
-      </div>
+      {/* <div className="overlay"></div>*/}
+
+      <MonsterProjects className="monster-projects" />
     </div>
   );
 };

@@ -2,21 +2,22 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import PreloaderComponent from "../components/preloader";
-import Home from '../components/home'
 import Navigation from '../components/navigation'
+import Home from '../components/home'
+import Intro from '../components/intro'
 import Skills from '../components/skills'
 import Projects from '../components/projects'
-import Resume from '../components/resume'
+import Teaching from '../components/teaching'
 import Blog from '../components/blog'
 
 
 const IndexPage = () => {
 
   const links = [
-    { to: "#Skills", label: "skills" },
-    { to: "#projects", label: "projects" },
-    { to: "#teaching", label: "teaching" },
-    { to: "#blog", label: "blog" },
+    { to: "skills", label: "skills" },
+    { to: "projects", label: "projects" },
+    { to: "teaching", label: "teaching" },
+    { to: "blog", label: "blog" },
   ];
 
   const [loading, setLoading] = React.useState(true);
@@ -37,9 +38,10 @@ const IndexPage = () => {
       <>
       <Navigation links={links}/>
       <Home/>
+      <Intro/>
       <Skills/>
       <Projects/>
-      <Resume/>
+      <Teaching/>
       <Blog/>
       </>
       )};

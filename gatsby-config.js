@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

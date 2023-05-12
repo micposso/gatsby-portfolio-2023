@@ -14,6 +14,11 @@ h2 {
   line-height: 0.9em;
 }
 
+#blog h2 {
+  margin-top: 40px;
+  letter-spacing: -2px;
+}
+
 h3 {
   font-size: $heading-small;
   line-height: 0.9em;
