@@ -37,7 +37,7 @@ const Home = () => {
           <Row>
             <Col>
               <div className="monster-container">
-                <MonsterHome className="monster-item" />
+                <MonsterHome className="monster-home" />
               </div>
               <h1>
                 <i>I build and manage</i> development teams <i>that scale.</i>{" "}

@@ -3,6 +3,8 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import MonsterSkills from "../assets/monster-2.svg";
 import MonsterProjects from "../assets/monster-3.svg";
 import MonsterTeaching from "../assets/monster-4.svg";
+import Monster5 from "../assets/monster-5.svg";
+import Monster6 from "../assets/monster-6.svg";
 
 import WAVES from "vanta/dist/vanta.waves.min";
 
@@ -38,9 +40,7 @@ const Intro = () => {
   return (
     <div
       ref={myRef}
-      className="scroll-child d-flex align-items-center justify-content-center"
-      id="projects"
-    >
+      className="scroll-child d-flex align-items-center justify-content-center">
       <Container className="container-gradient container-text">
         <Row>
           <Col>
@@ -61,14 +61,14 @@ const Intro = () => {
           </Col>
         </Row>
         <Row>
-  
+          <Col><MonsterProjects className="monster-item" /></Col>
+          <Col><Monster6 className="monster-item"  /></Col>
+          <Col><MonsterTeaching className="monster-item"  /></Col>
+
         </Row>
       </Container>
       {/* <div className="overlay"></div>*/}
 
-      <MonsterSkills className="monster-skills" />
-      <MonsterProjects className="monster-projects" />
-      <MonsterTeaching className="monster-teaching" />
     </div>
   );
 };
