@@ -20,15 +20,15 @@ const Intro = () => {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
           color: 0x0,
-          shininess: 6.00,
-          waveHeight: 11.00,
+          shininess: 6.0,
+          waveHeight: 11.0,
           waveSpeed: 0.55,
-          zoom: 1.13
+          zoom: 1.13,
         })
       );
     }
@@ -40,7 +40,8 @@ const Intro = () => {
   return (
     <div
       ref={myRef}
-      className="scroll-child d-flex align-items-center justify-content-center">
+      className="scroll-child d-flex align-items-center justify-content-center"
+    >
       <Container className="container-gradient container-text">
         <Row>
           <Col>
@@ -50,25 +51,38 @@ const Intro = () => {
           </Col>
           <Col>
             <p>
-              In hac habitasse platea dictumst. Phasellus tristique lacus quis
-              eros cursus faucibus. Proin odio velit, pulvinar at rhoncus non,
-              tempor ac erat. Fusce congue augue vitae volutpat scelerisque.
-              Aliquam et vehicula tortor. Curabitur in volutpat risus, eget
-              mollis leo. Donec non placerat urna. Pellentesque tincidunt
-              venenatis imperdiet. Fusce sodales enim eget ipsum commodo
-              eleifend.
+            As a web developer, I am an intrepid sailor charting the vast digital ocean. With a compass of strong foundations, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools, I brave sea monsters of bugs, taming them with skillful precision. Forever a student of the craft, I set sail on a never-ending voyage, seeking to conquer new horizons and master the ever-changing tides of technology.
             </p>
           </Col>
         </Row>
         <Row>
-          <Col><MonsterProjects className="monster-item" /></Col>
-          <Col><Monster6 className="monster-item"  /></Col>
-          <Col><MonsterTeaching className="monster-item"  /></Col>
-
+          <Col className="text-center">
+            <MonsterProjects className="monster-item" />
+            <h4>
+              Technical 
+              <br />
+              Foundation
+            </h4>
+          </Col>
+          <Col className="text-center">
+            <Monster6 className="monster-item" />
+            <h4>
+              Problem
+              <br />
+              Solving
+            </h4>
+          </Col>
+          <Col className="text-center">
+            <MonsterTeaching className="monster-item" />
+            <h4>
+              Always
+              <br />
+              Learning
+            </h4>
+          </Col>
         </Row>
       </Container>
       {/* <div className="overlay"></div>*/}
-
     </div>
   );
 };

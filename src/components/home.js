@@ -40,8 +40,8 @@ const Home = () => {
                 <MonsterHome className="monster-home" />
               </div>
               <h1>
-                <i>I build and manage</i> development teams <i>that scale.</i>{" "}
-                <span className="heading-sub">I can also code :)</span>
+                <i>I'm a coding kraken</i> taming digital tides <i>with mastery</i>
+                
               </h1>
               <div className="vertical_container">
                 <div className="vertical_container-text">scrolldown</div>
