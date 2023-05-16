@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import { Link } from "gatsby";
-import MonsterProjects from "../assets/monster-3.svg";
+import MonsterProjects from "../assets/monster-6.svg";
 
 import RINGS from "vanta/dist/vanta.rings.min";
 

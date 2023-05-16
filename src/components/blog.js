@@ -1,11 +1,29 @@
+import { useStaticQuery, graphql } from "gatsby";
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row, Col, Card, Badge, Jumbotron } from "react-bootstrap";
-
-import { Link } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap";
 
 import DOTS from "vanta/dist/vanta.dots.min";
 
-const Blog = ({ links }) => {
+const Blog = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            slug
+            stack
+            title
+            preview
+          }
+          id
+        }
+      }
+    }
+  `);
+
+  const { allMarkdownRemark } = data;
+  const nodes = allMarkdownRemark.nodes;
+
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
 
@@ -24,91 +42,19 @@ const Blog = ({ links }) => {
 
   return (
     <div ref={myRef} className="scroll-child" id="blog">
-      <Container fluid className="py-5 header-container">
-     
-  
-      </Container>
+      <Container fluid className="py-5 header-container"></Container>
       <Container className="blog_container ">
-        <Row>
-          <Col>
-            <h2>Title of bloc</h2>
-            <p>
-              Date <span>05/2023</span>
-            </p>
-            <p>
-              Sed lorem mi, sodales quis lacinia ac, cursus in magna. Proin
-              magna nunc, bibendum at risus eget, mollis accumsan nulla.
-              Praesent ut ultricies urna, vitae rhoncus neque. Donec non iaculis
-              ante, in accumsan eros. Aenean pharetra nec neque id porta.
-              Aliquam at sodales tortor, eu ultrices turpis. Morbi egestas elit
-              orci, at volutpat odio dictum at.
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Title of bloc</h2>
-            <p>
-              Date <span>05/2023</span>
-            </p>
-            <p>
-              Sed lorem mi, sodales quis lacinia ac, cursus in magna. Proin
-              magna nunc, bibendum at risus eget, mollis accumsan nulla.
-              Praesent ut ultricies urna, vitae rhoncus neque. Donec non iaculis
-              ante, in accumsan eros. Aenean pharetra nec neque id porta.
-              Aliquam at sodales tortor, eu ultrices turpis. Morbi egestas elit
-              orci, at volutpat odio dictum at.
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Title of bloc</h2>
-            <p>
-              Date <span>05/2023</span>
-            </p>
-            <p>
-              Sed lorem mi, sodales quis lacinia ac, cursus in magna. Proin
-              magna nunc, bibendum at risus eget, mollis accumsan nulla.
-              Praesent ut ultricies urna, vitae rhoncus neque. Donec non iaculis
-              ante, in accumsan eros. Aenean pharetra nec neque id porta.
-              Aliquam at sodales tortor, eu ultrices turpis. Morbi egestas elit
-              orci, at volutpat odio dictum at.
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Title of bloc</h2>
-            <p>
-              Date <span>05/2023</span>
-            </p>
-            <p>
-              Sed lorem mi, sodales quis lacinia ac, cursus in magna. Proin
-              magna nunc, bibendum at risus eget, mollis accumsan nulla.
-              Praesent ut ultricies urna, vitae rhoncus neque. Donec non iaculis
-              ante, in accumsan eros. Aenean pharetra nec neque id porta.
-              Aliquam at sodales tortor, eu ultrices turpis. Morbi egestas elit
-              orci, at volutpat odio dictum at.
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Title of bloc</h2>
-            <p>
-              Date <span>05/2023</span>
-            </p>
-            <p>
-              Sed lorem mi, sodales quis lacinia ac, cursus in magna. Proin
-              magna nunc, bibendum at risus eget, mollis accumsan nulla.
-              Praesent ut ultricies urna, vitae rhoncus neque. Donec non iaculis
-              ante, in accumsan eros. Aenean pharetra nec neque id porta.
-              Aliquam at sodales tortor, eu ultrices turpis. Morbi egestas elit
-              orci, at volutpat odio dictum at.
-            </p>
-          </Col>
-        </Row>
+        {nodes.map((node) => (
+          <Row key={node.id}>
+            <Col>
+              <h2>{node.frontmatter.title}</h2>
+              <p>
+                Date <span>{node.frontmatter.date}</span>
+              </p>
+              <p>{node.frontmatter.preview}</p>
+            </Col>
+          </Row>
+        ))}
       </Container>
     </div>
   );

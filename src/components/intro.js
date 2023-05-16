@@ -51,7 +51,7 @@ const Intro = () => {
           </Col>
           <Col>
             <p>
-            As a web developer, I am an intrepid sailor charting the vast digital ocean. With a compass of strong foundations, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools, I brave sea monsters of bugs, taming them with skillful precision. Forever a student of the craft, I set sail on a never-ending voyage, seeking to conquer new horizons and master the ever-changing tides of technology.
+            <span className="text-uppercase">As a web developer</span>, I am an intrepid sailor charting the vast digital ocean. With a compass of strong foundations, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools, I brave a sea of monsters of bugs, outdated documentation, and tight deadline,  taming them with skillful precision. Forever a student of the craft, I set sail on a never-ending voyage of learning, seeking to conquer new horizons and master the ever-changing tides of technology.
             </p>
           </Col>
         </Row>
@@ -61,7 +61,7 @@ const Intro = () => {
             <h4>
               Technical 
               <br />
-              Foundation
+              <i>Leardership</i>
             </h4>
           </Col>
           <Col className="text-center">
@@ -69,15 +69,15 @@ const Intro = () => {
             <h4>
               Problem
               <br />
-              Solving
+              <i>Solving</i>
             </h4>
           </Col>
           <Col className="text-center">
             <MonsterTeaching className="monster-item" />
             <h4>
-              Always
+              Knowledge
               <br />
-              Learning
+              <i>& Learning</i>
             </h4>
           </Col>
         </Row>

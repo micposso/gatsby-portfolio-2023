@@ -22,6 +22,8 @@
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.8.0",
+    "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-transformer-remark": "^6.9.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",

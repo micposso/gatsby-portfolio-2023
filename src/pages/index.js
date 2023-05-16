@@ -9,6 +9,7 @@ import Skills from '../components/skills'
 import Projects from '../components/projects'
 import Teaching from '../components/teaching'
 import Blog from '../components/blog'
+import About from '../components/about'
 
 
 const IndexPage = () => {
@@ -18,6 +19,7 @@ const IndexPage = () => {
     { to: "projects", label: "projects" },
     { to: "teaching", label: "teaching" },
     { to: "blog", label: "blog" },
+    { to: "about", label: "about" },
   ];
 
   const [loading, setLoading] = React.useState(true);
@@ -43,6 +45,7 @@ const IndexPage = () => {
       <Projects/>
       <Teaching/>
       <Blog/>
+      <About/>
       </>
       )};
     </div>

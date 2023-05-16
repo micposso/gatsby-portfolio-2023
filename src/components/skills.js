@@ -4,10 +4,12 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiReact } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiD3Dotjs } from "react-icons/si";
+import { DiSass } from "react-icons/di";
 
 import { css } from "@emotion/react";
 
-import MonsterSkills from "../assets/monster-2.svg";
+import MonsterSkills from "../assets/monster-3.svg";
 
 import NET from "vanta/dist/vanta.net.min";
 
@@ -132,9 +134,12 @@ const Skills = () => {
                   </Col>
                   <Col>
                     <IoLogoJavascript className="tech-icons" />
+                    <SiTailwindcss className="tech-icons" />
+                    <DiSass className="tech-icons" />
                     <DiReact className="tech-icons" />
                     <SiTypescript className="tech-icons" />
-                    <SiTailwindcss className="tech-icons" />
+                    <SiD3Dotjs className="tech-icons" />
+
                   </Col>
                 </Row>
               </Container>
