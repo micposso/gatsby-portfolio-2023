@@ -56,26 +56,36 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
   opacity: .3;
   mix-blend-mode: multiply;
 }
 
-.background-monsters {
-  position: absolute;
-  right: -10%;
-  bottom: 0;
-  z-index: 5;
-}
-
 .monster-skills {
+  position: absolute;
+  transform: scaleX(-1);
+  z-index: 5;
+  right: -10%;
   width: 17em;
   fill: #fff;
 }
 
 .monster-projects {
+  position: absolute;
+  z-index: 5;
+  left: -11%;
   width: 17em;
   fill: #fff;
+  transform: scaleX(-1);
+
+}
+
+.monster-teaching {
+  position: absolute;
+  transform: scaleX(-1);
+  fill: #fff;
+  z-index: 5;
+  width: 17em;
+  right: -7%;
 }
 
 .overlay {
@@ -95,7 +105,62 @@ body {
 }
 
 .container-gradient {
-  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.7), transparent);
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 1), transparent);
+}
+
+.tech-icons {
+  fill: #fff;
+  width: 65px;
+  height: 65px; 
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px 0;
+}
+
+.nav_external-links-container {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  right: 0;
+}
+
+.external-links-icons {
+  fill: #fff;
+  width: 40px;
+  height: 40px; 
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px 0;
+}
+
+.scroll-down-indicator {
+  position: relative;
+  animation: scrollAnimation 3s infinite;
+}
+
+@keyframes scrollAnimation {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+}
+
+.about-image-container {
+  min-width: 300px;
+  height: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 320px;
+}
+
+.about-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
     
 

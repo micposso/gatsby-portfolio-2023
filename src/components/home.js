@@ -23,31 +23,34 @@ const Home = () => {
   }, [vantaEffect]);
 
   return (
-    <div ref={myRef}>
-      <div
+    <>
+
+    {/* <div className="overlay"></div> */}
+
+      <div ref={myRef}
         className="scroll-child d-flex justify-content-center align-items-center vh-100"
         id="home"
       >
+
         <Container className="home-hero">
           <Row>
             <Col>
               <div className="monster-container">
-                <MonsterHome className="monster-item" />
+                <MonsterHome className="monster-home" />
               </div>
               <h1>
-                <i>I build and manage</i> development teams <i>that scale.</i>{" "}
-                <span className="heading-sub">I can also code :)</span>
+                <i>I'm a fearless sailor</i> taming the digital tides <i>with coding mastery</i>
+                
               </h1>
               <div className="vertical_container">
-                <div className="vertical_container-text">scrolldown</div>
+                <div className="vertical_container-text scroll-down-indicator">scrolldown</div>
               </div>
             </Col>
           </Row>
         </Container>
-        <div className="overlay"></div>
         <div className="background-profile"></div>
       </div>
-    </div>
+    </>
   );
 };
 

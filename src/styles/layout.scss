@@ -1,5 +1,10 @@
 .home-hero {
-  max-width: 900px; ;
+  max-width: 900px;
+  z-index: 5;
+}
+
+#home {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .monster-container {
@@ -8,8 +13,12 @@
   justify-content: center;
 }
 
+.monster-home {
+  width: 50%;
+}
+
 .monster-item {
-  width: 35%;
+  fill: #fff;
 }
 
 .vertical_container {
@@ -22,3 +31,40 @@ justify-content: center;
   font-size: 0.7em;
   writing-mode: vertical-rl;
 }
+
+.header-container {
+  min-height: 200px;
+}
+
+.blog-background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.blog_container {
+  margin-bottom: 10%;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.blog_container::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.blog_container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.blog_container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.blog_container::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
+
+

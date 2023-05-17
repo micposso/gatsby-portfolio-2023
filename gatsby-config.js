@@ -3,10 +3,26 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    name: `Michael Posso`,
+    brand: `Tech Leadership | Web Developer | Educator`,
+    siteUrl: `https://www.mikeposso.com`,
+    description: `A web developer, technical leader and user interface designer`,
+    menu: [
+      { to: "skills", label: "skills" },
+      { to: "projects", label: "projects" },
+      { to: "teaching", label: "teaching" },
+      { to: "blog", label: "blog" },
+      { to: "about", label: "about" },
+    ],
+    social: [
+      { to: "https://github.com/micposso", label: "github" },
+      { to: "projects", label: "linkedin" },
+      { to: "teaching", label: "resume" },
+    ],
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -36,14 +52,6 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/ // See below to configure properly
-        }
-      }
-    },
-    {
       resolve: `gatsby-plugin-emotion`,
       options: {
         // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
@@ -53,6 +61,22 @@ module.exports = {
         labelFormat: `[local]`,
         cssPropOptimization: true,
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `blog`,
+        // Path to the directory
+        path: `${__dirname}/src/blog/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`,
+      },
+    },
   ],
 };

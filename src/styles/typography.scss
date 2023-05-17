@@ -15,6 +15,16 @@ h2 {
 }
 
 h3 {
+  font-size: $heading-medium;
+  letter-spacing: 0;
+}
+
+#blog h2 {
+  margin-top: 40px;
+  letter-spacing: -2px;
+}
+
+h3 {
   font-size: $heading-small;
   line-height: 0.9em;
 }
@@ -25,6 +35,15 @@ p {
   font-weight: 300;
   line-height: 1.7em;
   color: #fff;
+}
+
+.bold-text {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.larger-text {
+  font-size: 1.5em;
 }
 
 .heading-sub {
