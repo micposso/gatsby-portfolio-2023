@@ -53,3 +53,7 @@
 .card-body {
   margin-top: 50%;
 }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' x1='3' x2='27' y1='6' y2='6'/%3E%3Cline stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' x1='3' x2='27' y1='15' y2='15'/%3E%3Cline stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' x1='3' x2='27' y1='24' y2='24'/%3E%3C/svg%3E");
+}

@@ -9,8 +9,15 @@ $heading-medium: 3em;
 $heading-small: 2em;
 $heading-xsmall: 1.1em;
 
-
 /* text */
 $text-regular:1em;
 $text-medium:1em;
 $text-small: 0.7em;
+
+@import 'styles';
+@import 'typography';
+@import 'layout';
+@import 'responsive';
+@import 'navigation';
+@import 'preloader';
+@import 'overrides';

@@ -28,7 +28,7 @@ const Home = () => {
     {/* <div className="overlay"></div> */}
 
       <div ref={myRef}
-        className="scroll-child d-flex justify-content-center align-items-center vh-100"
+        className="scroll-child d-flex justify-content-center align-items-center"
         id="home"
       >
 
@@ -39,7 +39,7 @@ const Home = () => {
                 <MonsterHome className="monster-home" />
               </div>
               <h1>
-                <i>I'm a fearless sailor</i> taming the digital tides <i>with coding mastery</i>
+                <i>I'm a fearless sailor</i><br></br> taming the digital tides<br></br> <i>with coding mastery</i>
                 
               </h1>
               <div className="vertical_container">

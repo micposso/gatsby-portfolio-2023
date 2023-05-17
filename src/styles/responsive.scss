@@ -1,0 +1,29 @@
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navbarFixed {
+    background-color: black;
+  }
+
+  h1 {
+    font-size: calc(40px + (60 - 60) * ((100vw - 320px) / (768 - 320)));
+    letter-spacing: -3px;
+    line-height: 1em;
+  }
+
+  .home-hero {
+    text-align: center;
+  }
+
+  html {
+    scroll-snap-type: none !important;
+  }
+
+  .full-page-container {
+    scroll-snap-type: none !important;
+  }
+
+  .scroll-child {
+    height: 100vh;
+    scroll-snap-align: none;
+}
+}

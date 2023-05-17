@@ -44,19 +44,19 @@ const Intro = () => {
     >
       <Container className="container-gradient container-text">
         <Row>
-          <Col>
+          <Col xs={12} md={12} lg={4}>
             <h1>
               <i>The Monsters</i>
             </h1>
           </Col>
-          <Col>
+          <Col xs={12} md={12} lg={8}>
             <p>
             <span className="text-uppercase">As a web developer</span>, I am an intrepid sailor charting the vast digital ocean. With a compass of strong foundations, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools, I brave a sea of monsters of bugs, outdated documentation, and tight deadline,  taming them with skillful precision. Forever a student of the craft, I set sail on a never-ending voyage of learning, seeking to conquer new horizons and master the ever-changing tides of technology.
             </p>
           </Col>
         </Row>
         <Row>
-          <Col className="text-center">
+          <Col xs={12} md={6} lg={4} className="text-center">
             <MonsterProjects className="monster-item" />
             <h4>
               Technical 
@@ -64,7 +64,7 @@ const Intro = () => {
               <i>Leardership</i>
             </h4>
           </Col>
-          <Col className="text-center">
+          <Col xs={12} md={6} lg={4} className="text-center">
             <Monster6 className="monster-item" />
             <h4>
               Problem
@@ -72,7 +72,7 @@ const Intro = () => {
               <i>Solving</i>
             </h4>
           </Col>
-          <Col className="text-center">
+          <Col xs={12} md={6} lg={4} className="text-center">
             <MonsterTeaching className="monster-item" />
             <h4>
               Knowledge
