@@ -95,12 +95,12 @@ const Skills = () => {
         css={isVisible ? fadeIn : null}
       >
         <Row>
-          <Col>
+          <Col xs={12} md={12} lg={4}>
             <h1>
               <i>Skills</i>
             </h1>
           </Col>
-          <Col>
+          <Col xs={12} md={12} lg={8}>
             <p>
               In hac habitasse platea dictumst. Phasellus tristique lacus quis
               eros cursus faucibus. Proin odio velit, pulvinar at rhoncus non,
@@ -112,7 +112,7 @@ const Skills = () => {
             </p>
           </Col>
         </Row>
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               <h3>Web Development</h3>

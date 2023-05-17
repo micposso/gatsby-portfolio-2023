@@ -1,32 +1,32 @@
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $font-headings;
 }
 
 h1 {
-  font-size: $heading-large;
+  font-size: calc(80px + (100 - 80) * ((100vw - 320px) / (1920 - 320)));
   letter-spacing: -8px;
   line-height: 0.9em;
 }
 
 h2 {
-  font-size: $heading-medium;
+  font-size: calc(40px + (30 - 40) * ((100vw - 320px) / (1920 - 320)));
   letter-spacing: -8px;
   line-height: 0.9em;
 }
 
 h3 {
-  font-size: $heading-medium;
+  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  letter-spacing: 0;
   letter-spacing: 0;
 }
 
 #blog h2 {
   margin-top: 40px;
   letter-spacing: -2px;
-}
-
-h3 {
-  font-size: $heading-small;
-  line-height: 0.9em;
 }
 
 p {
@@ -53,8 +53,4 @@ p {
 
 .vertical-text {
   text-orientation: mixed;
-}
-
-.nav-link {
-  text-transform: capitalize;
 }
