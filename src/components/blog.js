@@ -43,7 +43,7 @@ const Blog = () => {
   return (
     <div ref={myRef} className="scroll-child" id="blog">
       <Container fluid className="py-5 header-container"></Container>
-      <Container className="blog_container ">
+      <Container className="blog_container">
         {nodes.map((node) => (
           <Row key={node.id}>
             <Col>

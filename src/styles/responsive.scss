@@ -1,5 +1,27 @@
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+  .scroll-child {
+    .projectCards {
+      row-gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .scroll-child {
+    .introCards {
+      row-gap: 35px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  #home {
+    height: 100vh;
+}
+
+
   .navbarFixed {
     background-color: black;
   }
@@ -12,6 +34,7 @@
 
   .home-hero {
     text-align: center;
+    padding-top: 80px;
   }
 
   html {
@@ -23,7 +46,22 @@
   }
 
   .scroll-child {
-    height: 100vh;
+    height: auto;
     scroll-snap-align: none;
+    .container-gradient {
+      z-index: 1111 !important;
+      margin: 10% 5%;
+    }
+  }
 }
+
+@media (max-width: 414px) {
+  .navbar-brand {
+    .nav_brand-name {
+      font-size: 18px !important;
+    }
+    .nav_brand-subtitle {
+      font-size: 12px !important;
+    }
+  }
 }

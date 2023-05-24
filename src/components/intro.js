@@ -46,7 +46,7 @@ const Intro = () => {
         <Row>
           <Col xs={12} md={12} lg={4}>
             <h1>
-              <i>The Monsters</i>
+              <i>The Sea Monsters</i>
             </h1>
           </Col>
           <Col xs={12} md={12} lg={8}>
@@ -55,7 +55,7 @@ const Intro = () => {
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="introCards py-4">
           <Col xs={12} md={6} lg={4} className="text-center">
             <MonsterProjects className="monster-item" />
             <h4>

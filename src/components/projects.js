@@ -90,12 +90,12 @@ const Projects = () => {
     >
       <Container className="container-gradient container-text">
         <Row>
-          <Col>
+          <Col xs={12} md={12} lg={4}>
             <h1>
               <i>Projects</i>
             </h1>
           </Col>
-          <Col>
+          <Col xs={12} md={12} lg={8}>
             <p>
               In hac habitasse platea dictumst. Phasellus tristique lacus quis
               eros cursus faucibus. Proin odio velit, pulvinar at rhoncus non,
@@ -107,10 +107,10 @@ const Projects = () => {
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="projectCards">
           {projects.map((project, index) => (
-            <Col key={index} xs={6} md={4} lg={3}>
-              <Card style={{ width: "18rem", backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(${project.image})` }}>
+            <Col key={index} xs={12} md={6} lg={4} xl={3}>
+              <Card style={{ width: "100%", backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(${project.image})` }}>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>

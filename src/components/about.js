@@ -38,7 +38,7 @@ const About = () => {
     >
       <Container className="container-gradient container-text">
         <Row>
-          <Col sm={4} className="d-flex justify-content-center align-items-center">
+          <Col lg={4} md={12} className="d-flex justify-content-center align-items-center">
             <div className="about-image-container">
               <img
                 className=""
@@ -48,7 +48,7 @@ const About = () => {
               <p>adfasdfadsf</p>
             </div>
           </Col>
-          <Col sm={8}>
+          <Col lg={8} md={12}>
             <h3><i>About me</i></h3>
             <p>
               <span className="text-uppercase">As a web developer</span>, I am

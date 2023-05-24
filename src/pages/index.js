@@ -1,19 +1,17 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import PreloaderComponent from "../components/preloader";
-import Navigation from '../components/navigation'
-import Home from '../components/home'
-import Intro from '../components/intro'
-import Skills from '../components/skills'
-import Projects from '../components/projects'
-import Teaching from '../components/teaching'
-import Blog from '../components/blog'
-import About from '../components/about'
-
+import Navigation from "../components/navigation";
+import Home from "../components/home";
+import Intro from "../components/intro";
+import Skills from "../components/skills";
+import Projects from "../components/projects";
+import Teaching from "../components/teaching";
+import Blog from "../components/blog";
+import About from "../components/about";
 
 const IndexPage = () => {
-
   const links = [
     { to: "skills", label: "skills" },
     { to: "projects", label: "projects" },
@@ -33,25 +31,25 @@ const IndexPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mainContentWrapper">
       {loading ? (
         <PreloaderComponent />
       ) : (
-      <>
-      <Navigation links={links}/>
-      <Home/>
-      <Intro/>
-      <Skills/>
-      <Projects/>
-      <Teaching/>
-      <Blog/>
-      <About/>
-      </>
-      )};
+        <>
+          <Navigation links={links} />
+          <Home />
+          <Intro />
+          <Skills />
+          <Projects />
+          <Teaching />
+          <Blog />
+          <About />
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Michael Posso | Web Developer</title>
+export const Head = () => <title>Michael Posso | Web Developer</title>;

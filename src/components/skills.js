@@ -112,7 +112,7 @@ const Skills = () => {
             </p>
           </Col>
         </Row>
-        <Accordion>
+        <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               <h3>Web Development</h3>
