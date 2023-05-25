@@ -14,13 +14,6 @@ import Blog from "../components/blog";
 import About from "../components/about";
 
 const IndexPage = () => {
-  const links = [
-    { to: "skills", label: "skills" },
-    /* { to: "projects", label: "projects" }, */
-    { to: "teaching", label: "teaching" },
-    /* { to: "blog", label: "blog" }, */
-    { to: "about", label: "about" },
-  ];
 
   const [loading, setLoading] = React.useState(true);
 
@@ -41,7 +34,7 @@ const IndexPage = () => {
       <Helmet>
         <meta name="icon" href="../static/favicon.ico" />
       </Helmet>
-      <Navigation links={links}/>
+      <Navigation />
       <Home/>
       <Intro/>
       <Skills/>

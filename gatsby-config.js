@@ -9,9 +9,7 @@ module.exports = {
     description: `A web developer, technical leader and user interface designer`,
     menu: [
       { to: "skills", label: "skills" },
-      { to: "projects", label: "projects" },
       { to: "teaching", label: "teaching" },
-      { to: "blog", label: "blog" },
       { to: "about", label: "about" },
     ],
     social: [
