@@ -1,11 +1,30 @@
 import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { DiGithubAlt } from "react-icons/di";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TbPdf } from "react-icons/tb";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Navigation = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const shouldAddClass = scrollTop > 150;
+      setIsScrolled(shouldAddClass);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleToggle = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   const {
     site: {
       siteMetadata: { name, brand, siteUrl, description, menu, social },
@@ -36,12 +55,15 @@ const Navigation = () => {
       <Navbar
         expand="lg"
         activeKey="/home"
-        className="navbarFixed justify-content-between"
+        className={`navbarFixed justify-content-between ${
+          isScrolled ? "darkBg" : ""
+        } ${isCollapsed ? "navbarExpandBg" : ""}`}
+        onToggle={handleToggle}
       >
         <Container fluid>
           <Navbar.Brand href="#home" className="nav_brand-left">
-              <div className="nav_brand-name fs-1">{name}</div>
-              <div className="nav_brand-subtitle fs-6">{brand}</div>
+            <div className="nav_brand-name fs-1">{name}</div>
+            <div className="nav_brand-subtitle fs-6">{brand}</div>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="navbar-nav" />

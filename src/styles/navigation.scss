@@ -1,17 +1,40 @@
 .navbarFixed {
   position: fixed;
-  z-index: 10;
+  z-index: 9999;
   width: 100%;
   font-family: Old Standard TT;
   font-size: 1rem;
   color: $headings-color;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s ease;
+
+}
+
+.navbarFixed.darkBg {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbarFixed.navbarExpandBg {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbarFixed a {
   color: $headings-color;
   font-weight: bold;
+}
+
+.navbar-nav .nav-link{
+  &:hover{
+    color: $headings-color;
+  }
+  &:focus{
+    color: $headings-color;
+  }
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  color: $headings-color;
 }
 
 .nav_menu-items {
@@ -50,4 +73,3 @@
 .nav-link:last-child {
   margin-right: 0px;
 }
-
