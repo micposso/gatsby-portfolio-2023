@@ -78,5 +78,14 @@ module.exports = {
         path: `${__dirname}/src/blog/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'YUA-5309625-1',
+        head: true,
+        anonymize: true,
+      },
+    },
+    'gatsby-plugin-react-helmet',
   ],
 };

@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Helmet } from "react-helmet"
 
 import PreloaderComponent from "../components/preloader";
 import Navigation from '../components/navigation'
@@ -16,9 +17,9 @@ const IndexPage = () => {
 
   const links = [
     { to: "skills", label: "skills" },
-    { to: "projects", label: "projects" },
+    /* { to: "projects", label: "projects" }, */
     { to: "teaching", label: "teaching" },
-    { to: "blog", label: "blog" },
+    /* { to: "blog", label: "blog" }, */
     { to: "about", label: "about" },
   ];
 
@@ -38,13 +39,16 @@ const IndexPage = () => {
         <PreloaderComponent />
       ) : (
       <>
+      <Helmet>
+        <meta name="icon" href="../static/favicon.ico" />
+      </Helmet>
       <Navigation links={links}/>
       <Home/>
       <Intro/>
       <Skills/>
-      <Projects/>
+      {/* <Projects/> */}
       <Teaching/>
-      <Blog/>
+      {/* <Blog/> */}
       <About/>
       </>
       )};
