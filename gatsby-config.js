@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     name: `Michael Posso`,
-    brand: `Tech Leadership | Web Developer | Educator`,
+    brand: `UX/UI Engineer | XR Designer | Tech Educator`,
     siteUrl: `https://www.mikeposso.com`,
     description: `A web developer, technical leader and user interface designer`,
     menu: [

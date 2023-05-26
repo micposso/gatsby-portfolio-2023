@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import MonsterSkills from "../assets/monster-2.svg";
 import MonsterProjects from "../assets/monster-3.svg";
 import MonsterTeaching from "../assets/monster-4.svg";
-import Monster5 from "../assets/monster-5.svg";
+import MonsterMarketing from "../assets/monster-5.svg";
 import Monster6 from "../assets/monster-6.svg";
 
 import WAVES from "vanta/dist/vanta.waves.min";
@@ -46,38 +46,45 @@ const Intro = () => {
         <Row>
           <Col xs={12} md={12} lg={4}>
             <h1>
-              <i>The Sea Monsters</i>
+              <i>The Code<br/>Monsters</i>
             </h1>
           </Col>
           <Col xs={12} md={12} lg={8}>
             <p>
-            <span className="text-uppercase">As a web developer</span>, I am an intrepid sailor charting the vast digital ocean. With a compass of strong foundations, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools, I brave a sea of monsters of bugs, outdated documentation, and tight deadline,  taming them with skillful precision. Forever a student of the craft, I set sail on a never-ending voyage of learning, seeking to conquer new horizons and master the ever-changing tides of technology.
+            <span className="text-uppercase">As a web developer</span>, I am an intrepid sailor charting the vast digital ocean. With a compass of HTML, CSS, and JavaScript, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools like debugging and unit testing, I brave a sea of monsters like bugs, outdated documentation, and tight deadlines, taming them with skillful precision. I specialized in the following eras for front-end development and digital marketing:
             </p>
           </Col>
         </Row>
         <Row className="introCards py-4">
-          <Col xs={12} md={6} lg={4} className="text-center">
+          <Col xs={12} md={6} lg={3} className="text-center">
             <MonsterProjects className="monster-item" />
             <h4>
-              Technical 
+            UX/UI 
               <br />
-              <i>Leardership</i>
+              <i>Engineering</i>
             </h4>
           </Col>
-          <Col xs={12} md={6} lg={4} className="text-center">
-            <Monster6 className="monster-item" />
-            <h4>
-              Problem
-              <br />
-              <i>Solving</i>
-            </h4>
-          </Col>
-          <Col xs={12} md={6} lg={4} className="text-center">
+          
+          <Col xs={12} md={6} lg={3} className="text-center">
             <MonsterTeaching className="monster-item" />
             <h4>
-              Knowledge
+            Agile Project
               <br />
-              <i>& Learning</i>
+              <i> Management</i>
+            </h4>
+          </Col>
+          <Col xs={12} md={6} lg={3} className="text-center">
+            <MonsterMarketing className="monster-item" />
+            <h4>
+            Email<br />
+              <i>Marketing & SEO</i>
+            </h4>
+          </Col>
+          <Col xs={12} md={6} lg={3} className="text-center">
+            <Monster6 className="monster-item" />
+            <h4>
+            Performance              <br />
+              <i>& a11y</i>
             </h4>
           </Col>
         </Row>

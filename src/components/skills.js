@@ -99,7 +99,7 @@ const Skills = () => {
         <Row>
           <Col xs={12} md={12} lg={4}>
             <h1>
-              <i>Skills</i>
+              <i>~Skills</i>
             </h1>
           </Col>
           <Col xs={12} md={12} lg={8}>

@@ -85,7 +85,7 @@ const Teaching = () => {
         <Row>
           <Col xs={12} md={12} lg={4}>
             <h1>
-              <i>Teaching</i>
+              <i>~Teaching</i>
             </h1>
           </Col>
           <Col xs={12} md={12} lg={8}>
