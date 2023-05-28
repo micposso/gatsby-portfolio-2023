@@ -39,7 +39,7 @@ const Home = () => {
                 <MonsterHome className="monster-home" />
               </div>
               <h1>
-                <i>I'm a fearless sailor</i><br></br> taming the digital tides<br></br> <i>with coding mastery</i>
+                <i>~Fearless UI engineer</i><br/>building next-generation<br/><i>digital experiences.</i>
                 
               </h1>
               <div className="vertical_container">

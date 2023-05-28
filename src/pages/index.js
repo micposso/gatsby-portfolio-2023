@@ -21,19 +21,20 @@ const IndexPage = () => {
     // simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="mainContentWrapper">
+      <Helmet>
+        <meta name="icon" href="../static/favicon.ico" />
+      </Helmet>
       {loading ? (
         <PreloaderComponent />
       ) : (
       <>
-      <Helmet>
-        <meta name="icon" href="../static/favicon.ico" />
-      </Helmet>
+
       <Navigation />
       <Home/>
       <Intro/>

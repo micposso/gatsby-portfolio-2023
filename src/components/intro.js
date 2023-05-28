@@ -50,8 +50,8 @@ const Intro = () => {
             </h1>
           </Col>
           <Col xs={12} md={12} lg={8}>
-            <p>
-            <span className="text-uppercase">As a web developer</span>, I am an intrepid sailor charting the vast digital ocean. With a compass of HTML, CSS, and JavaScript, I navigate the turbulent waves of coding challenges. Equipped with problem-solving tools like debugging and unit testing, I brave a sea of monsters like bugs, outdated documentation, and tight deadlines, taming them with skillful precision. I specialized in the following eras for front-end development and digital marketing:
+            <p>            
+            <span className="text-uppercase">As a lead UI engineer with 12 years of experience</span>, I use my skills in HTML, CSS, JavaScript, React, TypeScript, and Sass to design and develop user interfaces that are visually appealing, user-friendly, and meet the needs of my clients. I also have experience in technology leadership, leading teams of developers to deliver high-quality products on time and within budget.
             </p>
           </Col>
         </Row>
